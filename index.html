@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="lottie.min.js"></script>
+<title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+          
+          <div class="col-lg-8">
+            <div class="card-page">
+              <h5 class="">貓咪</h5>
+              <h4>動畫播放處</h4>
+              <div id="animation"></div>
+              
+              <hr>
+              <!-- json animation -->
+              <!-- Video -->
+              <div class="text-center py-5">
+                <!-- <embed class="embed-video" src="https://www.youtube.com/embed/k1D0_wFlXgo?list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX"> -->
+                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/mBVri255wdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+                        
+            </div>
+          
+            <div class="card-page mt-3">
+              <h5 class="">Partners</h5>
+              <hr>
+  
+              <div class="row">
+                <!-- <div class="col-sm-6 col-lg-12 py-3">
+                  <div class="img-place client-img">
+                    <img src="../assets/img/clients/mediawave.png" alt="">
+                  </div>
+                </div> -->
+                <div class="col-sm-6 col-lg-12 py-3">
+                  <div class="img-place client-img">
+                    <img src="../assets/img/clients/gp.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+
+         
+  
+  
+        </div>
+      </div>
+    <div id="svgContainer"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script>
+  lottie.loadAnimation({
+      path:'render.json',   //json文件路径
+      loop:true,
+      autoplay:true,
+      renderer:'canvas',  //渲染方式，有"html"、"canvas"和"svg"三种
+      container:document.getElementById('animation')
+  });
+  //lottie-web的完整api文档见GitHub项目首页(https://github.com/airbnb/lottie-web)
+</script>
+
+
+
+</body>
+</html>
